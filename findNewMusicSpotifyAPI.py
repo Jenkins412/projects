@@ -2,7 +2,7 @@ import requests
 import json
 from datetime import date
 
-# Create an account using Spotify API and 
+# To use this algorithm, first create an account using Spotify API. Find your client ID, client secret, and use these to gain access to your refresh token
 client_id = # Fill in with your Spotify account's client ID
 client_secret = # Fill in with your Spotify account's client secret
 
@@ -19,6 +19,7 @@ headers = {"Authorization": auth_header}
 # Find your refresh token so that you can run this program automatically without having to manually find your access token
 # To bypass this, change "self.access_token" inside of the class to what your Spotify API shows, then remove "a.new_token()" from the call in main() at the bottom
 endpoint = "https://accounts.spotify.com/api/token"
+# Use this simple guide to find your refresh token: https://dev.to/sabareh/how-to-get-the-spotify-refresh-token-176
 refresh_token = # Fill this with your Spotify account's refresh token
 
 class recent_songs_playlist:
