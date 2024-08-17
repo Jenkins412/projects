@@ -3,14 +3,14 @@ import json
 from datetime import date
 
 # Create an account using Spotify API and 
-client_id = "75d9d5e3a84643289d91537828ff9996"
-client_secret = "31e46343a931489bb6b75f215d6518de"
+client_id = # Fill in with your Spotify account's client ID
+client_secret = # Fill in with your Spotify account's client secret
 
 # Use an online encoder for the combined client ID and client secret
-base_64_encoded = "NzVkOWQ1ZTNhODQ2NDMyODlkOTE1Mzc4MjhmZjk5OTY6MzFlNDYzNDNhOTMxNDg5YmI2Yjc1ZjIxNWQ2NTE4ZGU"
+base_64_encoded = # Fill this with the returned encoding
 
 # This is for your Spotify user ID
-user_id = "jackjenkss_"
+user_id = # Put your Spotify user ID here
 
 # This uses the above variables to make things easier to format in the class below
 auth_header = "Basic " + base_64_encoded
@@ -19,7 +19,7 @@ headers = {"Authorization": auth_header}
 # Find your refresh token so that you can run this program automatically without having to manually find your access token
 # To bypass this, change "self.access_token" inside of the class to what your Spotify API shows, then remove "a.new_token()" from the call in main() at the bottom
 endpoint = "https://accounts.spotify.com/api/token"
-refresh_token = "AQBnhwaUNUbOV30XR29zRiUyf6A7v8_n5YA5-HyHhL8aaElEJ2S-nmGgfqG-pYKPqUkpBxECryu1N1yFE09o6cBqD5tKB4TdJ8G_nSaropkNIQfci7M5yiqY0sfWw8G8_N8"
+refresh_token = # Fill this with your Spotify account's refresh token
 
 class recent_songs_playlist:
     def __init__(self): # All the variables saved inside the instance of the class to continue to be used throughout the call in main() at the bottom
