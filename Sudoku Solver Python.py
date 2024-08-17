@@ -1,6 +1,4 @@
-# this i
-
-board = [
+board = [ # Fill this with what sudoku board you are trying to solve
     [7,8,0,4,0,0,1,2,0],
     [6,0,0,0,7,5,0,0,9],
     [0,0,0,6,0,1,0,7,8],
